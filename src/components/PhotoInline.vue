@@ -8,16 +8,21 @@
 <style scoped>
 
     .inlineImageWrapper {
+        display: inline-block;
         background-color: black;
         height: v-bind(height);
+        margin-left: 12px;
         margin-right: 12px;
         margin-top: 12px;
+        font-family: Arial;
+        max-width: 100%;
     }
 
     img.inlineImage {
         display: inline-block;
-        width: v-bind(width);
+        max-width: 100%;
         height: v-bind(height);
+        object-fit: v-bind(fitStyle);
     }
 
     img.inlineImage:hover {
@@ -31,7 +36,6 @@ import PhotoFullview from './PhotoFullview.vue';
     const props = defineProps({
         image: String,
         caption: String,
-        width: String,
         height: String,
         fitStyle: String,
         k: Number

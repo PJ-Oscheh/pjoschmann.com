@@ -15,10 +15,8 @@
         </ul>
         <span class="aboutLabel" v-if="description != null">About:</span>
         <p>{{ description }}</p>
-        <div class="images" v-for="(image, i) in images">
-            <div class="imageEntry">
-                <PhotoInline :image="image" height="300px" :k="k+i"/>
-            </div>
+        <div class="images">
+            <PhotoInline v-for="(image, i) in images" :image="image.path" height="160px" :caption="image.caption" :k="k+i" fit-style="cover"/>
         </div>
     </div>
 </template>
