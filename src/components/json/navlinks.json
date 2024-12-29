@@ -1,0 +1,15 @@
+{
+    "home": {
+        "name": "Home",
+        "route": "/"
+    },
+    "experience": {
+        "name": "Experience",
+        "route": "/experience"
+    },
+    "projects": {
+        "name": "Projects",
+        "route": "/projects"
+        }
+    
+}

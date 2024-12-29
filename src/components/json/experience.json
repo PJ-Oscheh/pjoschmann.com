@@ -1,0 +1,38 @@
+{
+    "history": {
+        "current": {
+            "employer": "Current Lighting Solutions",
+            "work_start": "May 2024",
+            "work_end": "August 2024",
+            "tasks": {
+                "diagnostics_app": {
+                    "name": "EZ Connect Diagnostics App",
+                    "skills": ["Flutter", "Dart", "IoT", "Bluetooth LE","Mobile App Development"],
+                    "description": "The EZ Connect Diagnostics app helps Current field engineers diagnose Current-made sensors.\n\nMy task was to create a new cross-platform mobile app using the Flutter UI framework in the Dart programming language. Some features that had to be included in the app already existed in this language in another app used by the company; I was able to cherry-pick this code and use it in my own codebase.\n\nOutside of that cherry-picked code, I had to re-implement features in an older diagnostics app written in Objective-C for iOS.\n\nOnce the new cross-platform app was brought to feature-parity with the older iOS app, I began to implement brand new features to help field engineers diagnose potential issues with configurations for Current's WMZ-10 sensor. This \"people counting\" sensor can count how many people are in a room, and keep the lights in the room on so long as people are present.\n\nMy diagnostic features include a graphical live read-out from the sensor that shows where the sensor detects warm areas (ideally, a person) and cold areas; and a recording feature to save data coming from the sensor so that it could be reviewed later. I followed formats used by Current in other applications to ensure artifacts created by my code (like the recording files) were compatible with those applications, and vice-versa."
+                },
+                "dali_driver_programmer": {
+                    "name": "DALI Driver Programmer",
+                    "skills": ["QT", "Python", "IoT"],
+                    "description": "The DALI Driver Programmer software can configure an LED driver to instruct a connected lighting fixture on how to behave.\n\nMy task was to turn a pre-existing GUI prototype application into a finished product.\n\nAfter learning the codebase for the program, I had to implement missing functionality, finish the GUI (like reworking it to use threading to allow for progress bars and implement UX enhancements for easier usability), and implement feedback from a factory using this program in production.\n\nAs far as I know, the code I wrote is still used by that factory today."
+                }
+            }
+        },
+        "xngage": {
+            "employer": "Xngage",
+            "work_start": "June 2023",
+            "work_end": "July 2023",
+            "tasks": {
+                "runbook": {
+                    "name": "Automatic Runbook Generator",
+                    "skills": ["C#", ".NET", "OpenXML"],
+                    "description": "The automatic runbook generator takes desired parameters and creates a \"runbook\" document. This document outlines work that Xngage will do for a client who is purchasing their services.\n\nMy tasks involved learning how to programatically write a Microsoft Word document. I learned about the OpenXML format - the format used by .docx files under-the-hood.\n\nSome challenges I recall from this task involved handling tables (for example, how to specify wide and narrow columns. Some tables had more columns than others, and I wanted to write reusable code!), handling formatting (for example, since OpenXML's handling of different font weights is... verbose... I wrote a very basic markdown parser so that a string with bold and non-bold formatting could simply be written as \"this is my *bolded* string\", instead of needing to directly work with more function calls to handle every single change in formatting), and learning the OpenXML format."
+                },
+                "backups": {
+                    "name": "Automatic Database Backup Utility",
+                    "skills": ["PowerShell", "TeamCity", "Azure DevOps"],
+                    "description": "This utility automatically backs up any database in Xngage's TeamCity instance in the click of a button.\n\nPreviously, employees had to perform these backups manually (perhaps needing to nag their tech lead to ask them to do it).\n\nMy script replaces this tedious procedure with a simple workflow. The employee logs in to Xngage's TeamCity instance, finds the client whose database they'd like to backup, and starts a \"backup job.\" This job will run my PowerShell script. This script handles backups in Xnagage's Azure DevOps cloud storage.\n\nFirst, it will check for any previous backups made by the script and delete them (but not delete any other scripts). Then, it will generate a \".bacpac\" file containing the requested database backup. Finally, the script will send a message to a Slack channel in Xngage's Slack server, providing a link to the .bacpac file."
+                }
+            }
+        }
+    }
+}
