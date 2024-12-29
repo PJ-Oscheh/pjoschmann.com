@@ -15,11 +15,16 @@
         </ul>
         <span class="aboutLabel" v-if="description != null">About:</span>
         <p>{{ description }}</p>
+        <div class="images" v-for="(image, i) in images">
+            <div class="imageEntry">
+                <PhotoInline :image="image" height="300px" :k="k+i"/>
+            </div>
+        </div>
     </div>
 </template>
 
 <style scoped>
-        .card {
+    .card {
         background-color: #e660002a;
         border-radius: 12px;
         border: 2px solid #e66100;
@@ -87,9 +92,17 @@
     ul {
         font-family: Arial, Helvetica, sans-serif;
     }
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 </style>
 
 <script setup>
+import PhotoInline from './PhotoInline.vue';
+
     const props = defineProps({
         project_name: String,
         project_type: String,
@@ -98,6 +111,8 @@
         description: String,
         skills: Array,
         tidbits: Array,
-        my_work: Array
+        my_work: Array,
+        images: Array,
+        k: Number,
     })
 </script>
