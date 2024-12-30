@@ -9,7 +9,6 @@
 
     .inlineImageWrapper {
         display: inline-block;
-        background-color: black;
         height: v-bind(height);
         margin-left: 12px;
         margin-right: 12px;
@@ -23,10 +22,12 @@
         max-width: 100%;
         height: v-bind(height);
         object-fit: v-bind(fitStyle);
+        transition: scale 0.15s, opacity 0.15s;
     }
 
     img.inlineImage:hover {
-        opacity: 0.75;
+        opacity: 0.5;
+        scale: 1.05;
     }
 </style>
 
@@ -38,7 +39,8 @@ import PhotoFullview from './PhotoFullview.vue';
         caption: String,
         height: String,
         fitStyle: String,
-        k: Number
+        k: Number,
+        transparentBackground: Boolean
     });
 </script>
 

@@ -16,14 +16,15 @@
             "type": "Personal Project",
             "skills": ["Vue.js", "HTML", "CSS", "JavaScript", "Javascript Frameworks", "Web Development"],
             "tidbits": ["Create an online digital portfolio to introduce myself, share my professional experience, and showcase school & personal projects", "Sharpen web development skills"],
-            "description": "Creating this portfolio gave me a chance to refresh myself on HTML, CSS, and JavaScript. Since web development isn't baked in to my school's software engineering curriculum, I took this opportunity to learn Vue.js, a widely-used JavaScript framework."
+            "description": "Creating this portfolio gave me a chance to refresh myself on HTML, CSS, and JavaScript. Since web development isn't baked into my school's software engineering curriculum, I took this opportunity to learn Vue.js, a widely-used JavaScript framework."
         },
         "shortcut_maker": {
             "name": "Shortcut Maker",
             "type": "Personal Project",
             "skills": ["GTK","Python"],
             "tidbits": ["Create application to easily create desktop entries on the GNOME desktop", "Follow GNOME Human Interface Guidelines to create an intuitive, accessible design"],
-            "description": "Shortcut Maker is an application that helps users easily create desktop entries on the GNOME desktop, a common Linux desktop environment.\n\nUsually, Linux software is distributed by some sort of repository, and installed using a package manager. As such, the concept of creating a \"desktop shortcut\" for software is uncommon; software is rarely downloaded from the internet.\n\nHowever, in some cases, like when compiling software from source, a package manager may not be used to install the application. This often means the application will make no attempt to integrate with the system's application launcher.\n\nIn these cases, Shortcut Maker makes it easy to integrate those apps. Rather than being forced to create a so-called \"desktop entry\" by hand, a user can use Shortcut Maker to configure how the application should appear in the system app launcher."
+            "description": "Shortcut Maker is an application that helps users easily create desktop entries on the GNOME desktop, a common Linux desktop environment.\n\nUsually, Linux software is distributed by some sort of repository, and installed using a package manager. As such, the concept of creating a \"desktop shortcut\" for software is uncommon; software is rarely downloaded from the internet.\n\nHowever, in some cases, like when compiling software from source, a package manager may not be used to install the application. This often means the application will make no attempt to integrate with the system's application launcher.\n\nIn these cases, Shortcut Maker makes it easy to integrate those apps. Rather than being forced to create a so-called \"desktop entry\" by hand, a user can use Shortcut Maker to configure how the application should appear in the system app launcher.",
+            "images": [{"path": "https://github.com/PJ-Oscheh/ShortcutMaker/raw/main/data/icons/io.github.pj_oscheh.shortcutmaker.svg", "caption": "Icon I made for Shortcut Maker"}, {"path": "src/assets/images/shortcutMakerUI.png", "caption": "Screenshot of the main Shortcut Maker interface"}]
         }
     }
 }

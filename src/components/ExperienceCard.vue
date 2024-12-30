@@ -5,7 +5,11 @@
         <h2>Tasks:</h2>
         <div class="tasks" v-for="(item, i) in tasks">
             <h3 class="taskTitle">{{ item.name }}</h3>
-            <span class="skillsLabel">Skills: </span><span class="skill" v-for="(skillItem, i) in item.skills">{{ skillItem }}</span>
+            <span class="innerHeader">Skills: </span><span class="skill" v-for="(skillItem, i) in item.skills">{{ skillItem }}</span>
+            <ul v-if="item.tidbits != null">
+                <li v-for="(tidbitItem, i) in item.tidbits">{{ tidbitItem }}</li>
+            </ul>
+            <span class="innerHeader">About:</span>
             <p>{{ item.description }}</p>
         </div>
     </div>
@@ -20,6 +24,8 @@
         max-width: 720px;
         margin: 12px;
         padding: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0px 0px 5px rgb(61, 61, 61);
     }
 
     .tasks {
@@ -27,7 +33,7 @@
         border-radius: 6px;
         margin-bottom: 6px;
         padding: 6px;
-        background-color: #ffab6f;
+        background-color: transparent;
     }
 
     .skill {
@@ -42,7 +48,7 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    .skillsLabel {
+    span.innerHeader {
         font-size: 18pt;
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -56,7 +62,7 @@
     }
 
     h2 {
-        font-weight: lighter;
+        font-weight: normal;
         font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -74,15 +80,20 @@
 
     p {
         white-space: pre-wrap;
-        font-family: 'Times New Roman', Times, serif;
     }
 </style>
 
 <script setup>
+    import { ref } from 'vue';
+
     const props = defineProps({
         employer: String,
         work_start: String,
         work_end: String,
-        tasks: Object
+        tasks: Object,
+        k: Number
     })
+
+    const showDescription = ref(false);
+    const showDescriptionIdx = ref(-1);
 </script>

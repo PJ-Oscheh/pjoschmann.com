@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
-        <div class="experiencesHolder" v-for="(item, i) in experience.history">
-            <ExperienceCard :employer="item.employer" :work_start="item.work_start" :work_end="item.work_end" :tasks="item.tasks"/>
+        <div class="experiencesHolder" v-for="(item, j, i) in experience.history">
+            <ExperienceCard :employer="item.employer" :work_start="item.work_start" :work_end="item.work_end" :tasks="item.tasks" :k="i"/>
         </div>
     </div>
 </template>

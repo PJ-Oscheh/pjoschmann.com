@@ -4,8 +4,8 @@
         <h2>{{ project_type }}</h2>
         <h3 class="workDate" v-if="work_start != null">{{ work_start }} - {{ work_end }}</h3>
         <span class="skillsLabel" v-if="skills != null">Skills: </span><span class="skill" v-for="(skillItem, i) in skills">{{ skillItem }}</span>
-        <ul v-if="tidbits != null" v-for="(item, i) in tidbits">
-            <li>{{ item }}</li>
+        <ul v-if="tidbits != null">
+            <li v-for="(item, i) in tidbits">{{ item }}</li>
         </ul>
         <ul v-if="my_work != null">
             <li>My work:</li>
@@ -16,7 +16,7 @@
         <span class="aboutLabel" v-if="description != null">About:</span>
         <p>{{ description }}</p>
         <div class="images">
-            <PhotoInline v-for="(image, i) in images" :image="image.path" height="160px" :caption="image.caption" :k="k+i" fit-style="cover"/>
+            <PhotoInline v-for="(image, i) in images" :image="image.path" height="160px" :caption="image.caption" :k="parseInt(`${k}${i}`)" fit-style="cover"/>
         </div>
     </div>
 </template>
@@ -29,6 +29,7 @@
         max-width: 720px;
         margin: 12px;
         padding: 12px;
+        box-shadow: 0px 0px 5px rgb(61, 61, 61);
     }
 
     .tasks {
