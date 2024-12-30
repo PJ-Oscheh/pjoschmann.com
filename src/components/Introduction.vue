@@ -9,7 +9,9 @@
                     <h3>{{ intro.intro.blurb }}</h3>
                 </div>
             </div>
-            <p id="description">{{ intro.intro.description }}</p>
+            <div class="pBox">
+                <p id="description">{{ intro.intro.description }}</p>
+            </div>
             <div class="reelWrapperParent">
                 <PhotoReel width="720px" height="640px" :images="photos.intro" fitStyle="cover" />
             </div>
@@ -27,6 +29,55 @@ const myImages = ["src/assets/pj.png"]
 </script>
 
 <style scoped>
+
+    /* Mobile */
+    @media screen and (max-width: 700px) {
+        .contactCardHolder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: flex-direction 0.25s;
+        }
+        .jumbotron {
+            display: flex;
+            flex-direction: column;
+            background-color: #e660002a;
+            margin-top: 48px;
+        }
+
+        .jumbotronColumn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+    }
+
+    /* Desktop */
+    @media screen and (min-width: 701px) {
+        .contactCardHolder {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            transition:  0.25s;
+        }
+
+        .jumbotron {
+        display: flex;
+        flex-direction: row;
+        background-color: #e660002a;
+        margin-top: 48px;
+        }
+
+        .jumbotronColumn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 90px;
+        }
+    }
+
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -61,62 +112,18 @@ const myImages = ["src/assets/pj.png"]
         justify-content: center;
     }
 
-    /* Mobile */
-    @media screen and (max-width: 700px) {
-        .contactCardHolder {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: flex-direction 0.25s;
-        }
-        .jumbotron {
-            display: flex;
-            flex-direction: column;
-            background-color: #e660002a;
-            margin-top: 48px;
-        }
-
-        .jumbotronColumn {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
-
-    /* Desktop */
-    @media screen and (min-width: 701px) {
-        .contactCardHolder {
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            transition:  0.25s;
-        }
-
-        .jumbotron {
+    div.pBox {
         display: flex;
-        flex-direction: row;
-        background-color: #e660002a;
-        margin-top: 48px;
-        }
-
-        .jumbotronColumn {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-right: 90px;
-        }
-    }
-
-    p {
-        max-width: 60vh;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 24px;
+        justify-content: center;
     }
 
     p#description {
+        max-width: 70vh;
+        text-align: center;
+        margin-top: 24px;
         margin-bottom: 60px;
+        margin-left: 12px;
+        margin-right: 12px;
     }
 
     h1 {
