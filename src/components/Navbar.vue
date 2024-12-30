@@ -28,6 +28,20 @@
 .itemsBox {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    transition: height 0.25s;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.671);
+    transition: font-size, 0.25s, color 0.25s, padding 0.25s;
+    text-decoration: none;
+    font-family: serif;
+}
+
+a.router-link-exact-active {
+    color: white;
+    transition: font-size 0.25s, color 0.25s;
 }
 
 .divider {
@@ -42,34 +56,25 @@
 /* Mobile */
 @media screen and (max-width: 700px) {
     .itemsBox {
-        display: flex;
         flex-direction: column;
         height: v-bind('itemsBoxHeight');
-        justify-content: center;
         align-items: start;
-        transition: height 0.25s;
         flex-grow: 1;
     }
 
     a {
-        color: rgba(255, 255, 255, 0.671);
         padding: 3px;
         font-size: 16pt;
-        transition: font-size 0.25s, padding 0.25s;
-        text-decoration: none;
-        font-family: serif;
         display: v-bind(inactiveLinkState);
+    }
+
+    a.router-link-exact-active {
+        font-size: 35pt;
+        display: inline-block;
     }
 
     .divider {
         display: none;
-    }
-
-    a.router-link-exact-active {
-        color: white;
-        font-size: 35pt;
-        transition: font-size 0.25s;
-        display: inline-block;
     }
 
     .menuButton {
@@ -110,20 +115,14 @@
     }
 
     .itemsBox {
-        display: flex;
-        justify-content: center;
         align-items: center;
         height: 155px;
-        transition: height 0.25s
     }
 
     a {
-        color: rgba(255, 255, 255, 0.671);
         padding: 16px;
         font-size: 20pt;
-        transition: font-size, 0.25s, color 0.25s, padding 0.25s;
-        text-decoration: none;
-        font-family: serif;
+        
     }
 
     a:hover {
@@ -133,8 +132,6 @@
 
     a.router-link-exact-active {
         font-size: 72pt;
-        transition: font-size 0.25s color 0.25s;;
-        color: white
     }
 
     .menuButton {
