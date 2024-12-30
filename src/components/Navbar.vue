@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="navbarWrapper">
         <div class="menuButtonBox">
             <button class="menuButton" v-on:click="toggleMenu">
             <div class="menuLine"></div>
@@ -19,7 +19,7 @@
 </template>
 
 <style scoped>
-.wrapper {
+.navbarWrapper {
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -44,7 +44,7 @@ a.router-link-exact-active {
     transition: font-size 0.25s, color 0.25s;
 }
 
-.divider {
+div.divider {
     display: flex;
     width: 2px;
     background-color: #722f00;
@@ -73,7 +73,7 @@ a.router-link-exact-active {
         display: inline-block;
     }
 
-    .divider {
+    div.divider {
         display: none;
     }
 
