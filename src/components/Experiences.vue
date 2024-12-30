@@ -7,22 +7,21 @@
 </template>
 
 <style scoped>
-    .experiencesHolder {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.experiencesHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .experiencesWrapper {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        margin-top: 24px;
-    }
+.experiencesWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 24px;
+}
 </style>
 
 <script setup>
 import ExperienceCard from '../components/ExperienceCard.vue';
 import experience from './json/experience.json'
-
 </script>

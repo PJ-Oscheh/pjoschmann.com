@@ -7,22 +7,22 @@
 </template>
 
 <style scoped>
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-    }
-    .projectsWrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-grow: 0;
-        margin-top: 24px;
-    }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.projectsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 0;
+    margin-top: 24px;
+}
 </style>
 
 <script setup>
-import projects from "./json/projects.json"
+import projects from "./json/projects.json";
 import ProjectCard from "./ProjectCard.vue";
 
 </script>

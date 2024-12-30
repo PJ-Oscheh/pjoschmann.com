@@ -9,38 +9,38 @@
 </template>
 
 <style scoped>
-        /* Mobile */
-        @media screen and (max-width: 700px) {
-        .contactCardHolder {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: flex-direction 0.25s;
-        }
+/* Mobile */
+@media screen and (max-width: 700px) {
+.contactCardHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: flex-direction 0.25s;
     }
+}
 
-    /* Desktop */
-    @media screen and (min-width: 701px) {
-        .contactCardHolder {
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            transition:  0.25s;
-        }
+/* Desktop */
+@media screen and (min-width: 701px) {
+.contactCardHolder {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    transition:  0.25s;
     }
+}
 
-    .footer {
-        display: flex;
-        flex-direction: column;
-        background-color: #ff6a00;
-    }
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff6a00;
+}
 
-    h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        margin-bottom: 50px;
-        color: white;
-    }
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
 </style>
 
 <script setup>

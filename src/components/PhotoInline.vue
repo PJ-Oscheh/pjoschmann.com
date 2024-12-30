@@ -33,19 +33,16 @@
 
 <script setup>
 import PhotoFullview from './PhotoFullview.vue';
-
-    const props = defineProps({
-        image: String,
-        caption: String,
-        height: String,
-        fitStyle: String,
-        k: Number,
-        transparentBackground: Boolean
-    });
-</script>
-
-<script>
 import { ref } from 'vue';
+
+const props = defineProps({
+    image: String,
+    caption: String,
+    height: String,
+    fitStyle: String,
+    k: Number,
+    transparentBackground: Boolean
+});
 
 const viewPhoto = ref(false);
 const clickedPhoto = ref(0)
