@@ -50,26 +50,26 @@ import footer from "./json/footer.json"
 import { ref } from "vue";
 
 const contactData = ref({
-        contactEntries: [
-            {
-                0: {
-                    prefix: "mailto:",
-                    k1: atob(intro.hotdogs.chicago_style.ketchup.substring(0,8)),
-                    k2: atob(intro.hotdogs.chicago_style.ketchup.substring(8)),
-                    k3: atob(intro.hotdogs.chicago_style.top_relish),
-                    useSafetext: true
-                },
-                1: {
-                    prefix: "tel:",
-                    k1: atob(intro.hotdogs.boring_plain.mustard),
-                    k2: atob(intro.hotdogs.boring_plain.mayo),
-                    k3: atob(intro.hotdogs.boring_plain.nonflavor),
-                    useSafetext: true
-                }
+    contactEntries: [
+        {
+            0: {
+                prefix: "mailto:",
+                k1: atob(intro.hotdogs.chicago_style.ketchup.substring(0,8)),
+                k2: atob(intro.hotdogs.chicago_style.ketchup.substring(8)),
+                k3: atob(intro.hotdogs.chicago_style.top_relish),
+                useSafetext: true
+            },
+            1: {
+                prefix: "tel:",
+                k1: atob(intro.hotdogs.boring_plain.mustard),
+                k2: atob(intro.hotdogs.boring_plain.mayo),
+                k3: atob(intro.hotdogs.boring_plain.nonflavor),
+                useSafetext: true
             }
-        ],
-        otherLinks: [
-            intro.links
-        ]
-    });
+        }
+    ],
+    otherLinks: [
+        intro.links
+    ]
+});
 </script>
