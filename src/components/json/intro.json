@@ -5,7 +5,7 @@
         "blurb": "Student at Baldwin Wallace - Graduating May 2025",
         "description": "Hey there! I'm PJ Oschmann, a senior software engineering student at Baldwin Wallace University. I bring passion, a strong work ethic, and grit to all the work I do - whether it be a hobby programming project or an important job with a deadline.",
         "gpa": "GPA: 3.8",
-        "image": "src/assets/pj.png"
+        "image": "pj.png"
     },
     "hotdogs": {
         "chicago_style": {

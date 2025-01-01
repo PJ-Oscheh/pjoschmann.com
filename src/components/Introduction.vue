@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="intro">
             <div class="jumbotron">
-                <img :src="intro.intro.image"/>
+                <img :src="getFile(intro.intro.image)"/>
                 <div class="jumbotronColumn">
                     <h1>{{ intro.intro.title }}</h1>
                     <h2>{{ intro.intro.name }}</h2>
@@ -139,7 +139,14 @@ h3 {
 </style>
 
 <script setup>
-import intro from "./json/intro.json"
+import intro from "./json/intro.json";
 import PhotoReel from "./PhotoReel.vue";
-import photos from "./json/photos.json"
+import photos from "./json/photos.json";
+
+function getFile(filePath) {
+    console.log("getting file")
+    return new URL(`../assets/${filePath}`, import.meta.url)
+}
+
+console.log(getFile(intro.intro.image));
 </script>
