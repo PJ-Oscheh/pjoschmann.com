@@ -16,7 +16,7 @@
         <span class="aboutLabel" v-if="description != null">About:</span>
         <p>{{ description }}</p>
         <div class="images">
-            <PhotoInline v-for="(image, i) in images" :image="image.path" height="160px" :caption="image.caption" :k="parseInt(`${k}${i}`)" fit-style="cover"/>
+            <PhotoInline v-for="(image, i) in images" :image="getFile(image.path, image.isRemote)" height="160px" :caption="image.caption" :k="parseInt(`${k}${i}`)" fit-style="cover"/>
         </div>
     </div>
 </template>
@@ -101,6 +101,7 @@ ul {
 
 <script setup>
 import PhotoInline from './PhotoInline.vue';
+import { computed } from 'vue';
 
 const props = defineProps({
     project_name: String,
@@ -114,4 +115,13 @@ const props = defineProps({
     images: Array,
     k: Number,
 });
+
+function getFile(filePath, isRemote) {
+    if (isRemote == true || isRemote == null) {
+        return filePath;
+    }
+    else {
+        return new URL(`../assets/images/${filePath}`, import.meta.url).toString();
+    }
+}
 </script>

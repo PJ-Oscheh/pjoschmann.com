@@ -144,9 +144,6 @@ import PhotoReel from "./PhotoReel.vue";
 import photos from "./json/photos.json";
 
 function getFile(filePath) {
-    console.log("getting file")
-    return new URL(`../assets/${filePath}`, import.meta.url)
+    return new URL(`../assets/${filePath}`, import.meta.url).toString();
 }
-
-console.log(getFile(intro.intro.image));
 </script>
