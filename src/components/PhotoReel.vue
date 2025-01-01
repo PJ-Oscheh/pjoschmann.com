@@ -101,7 +101,7 @@ const currentIdx = ref(0);
 const viewPhoto = ref(false);
 
 function changeImageIdx(idx) {
-    if (idx >=0 && idx < this.props.images.length) {
+    if (idx >=0 && idx < props.images.length) {
         currentIdx.value = idx;
     }
 };
