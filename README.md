@@ -1,6 +1,6 @@
 # pj-site
 
-This template should help get you started developing with Vue 3 in Vite.
+This is my portfolio website. It's built using Vue.js. Below are instructions on how to run the site locally.
 
 ## Recommended IDE Setup
 
