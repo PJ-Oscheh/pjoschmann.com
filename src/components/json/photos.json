@@ -2,15 +2,15 @@
     "intro": 
         [
             {
-                "path": "https://media.licdn.com/dms/image/v2/D5622AQHtH9wf8wBIxQ/feedshare-shrink_800/feedshare-shrink_800/0/1733586116896?e=1737590400&v=beta&t=FS-19RWxVQ68qVIn5KBBikYTUE0w9ZklKbz0h2rpunw",
+                "path": "public/dijkstra.jpg",
                 "caption": "Presenting a Dijkstra's algorithm implementation at CEMS in December 2024"
             },
             {
-                "path": "https://media.licdn.com/dms/image/v2/D5622AQFTOnuNyGChgQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1733586117643?e=1737590400&v=beta&t=dhLNXqJPmqh1IlxKLsBJFPgQJhfZFxSJD0ZH_RlM71c",
+                "path": "public/mg1.jpg",
                 "caption": "Discussing the progress made in Fall 2024 on the Mission Guatemala Database Project at CEMS in December 2024"
             },
             {
-                "path": "https://media.licdn.com/dms/image/v2/D5622AQHIUHy-epT0VA/feedshare-shrink_1280/feedshare-shrink_1280/0/1733586117011?e=1737590400&v=beta&t=HZYL--AZ_b-hOEnLHsUtn9crk_bXPy9Ip9y5vAvMK1Y",
+                "path": "public/mg2.jpg",
                 "caption": "Another image from our Fall 2024 CEMS discussion on Mission Guatemala"
             }
         ]
