@@ -2,15 +2,15 @@
     "intro": 
         [
             {
-                "path": "public/dijkstra.jpg",
+                "path": "dijkstra.jpg",
                 "caption": "Presenting a Dijkstra's algorithm implementation at CEMS in December 2024"
             },
             {
-                "path": "public/mg1.jpg",
+                "path": "mg1.jpg",
                 "caption": "Discussing the progress made in Fall 2024 on the Mission Guatemala Database Project at CEMS in December 2024"
             },
             {
-                "path": "public/mg2.jpg",
+                "path": "mg2.jpg",
                 "caption": "Another image from our Fall 2024 CEMS discussion on Mission Guatemala"
             }
         ]

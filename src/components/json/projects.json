@@ -9,7 +9,7 @@
             "tidbits": ["Help create app to help clinic move from paper-based operations to digital operations", "As scrum master, ensure everyone remains on task by keeping track of \"daily standup\" posts and by creating mid-term and end-of-term reports of completed work."],
             "description": "The Mission Guatemala Database project (commonly called \"MGDB\" or simply \"Mission Guatemala\") is an application that helps a clinic in Guatemala handle record-keeping, including keeping track of patients who have visited the clinic, patient health information, patient payments, and much more.",
             "my_work": ["Speed up patient list retrieval (consisting of over 10,000 patients!)", "Implement fuzzy search to find patients easier", "Help implement \"front desk\" feature to keep track of patient payments"],
-            "images": [{"path": "public/dijkstra.jpg", "caption": "Presenting Mission Guatemala at CEMS, 2024"}, {"path": "public/mg1.jpg", "caption": "Presenting Mission Guatemala at CEMS, 2024"}, {"path": "public/mg2.jpg", "caption": "Presenting Mission Guatemala at CEMS, 2024"}]
+            "images": [{"path": "dijkstra.jpg", "caption": "Presenting Mission Guatemala at CEMS, 2024"}, {"path": "mg1.jpg", "caption": "Presenting Mission Guatemala at CEMS, 2024"}, {"path": "mg2.jpg", "caption": "Presenting Mission Guatemala at CEMS, 2024"}]
         },
         "website": {
             "name": "pjoschmann.com",
